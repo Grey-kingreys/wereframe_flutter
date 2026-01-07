@@ -6,12 +6,18 @@ class Apropos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height / 5,
+      height: MediaQuery.of(context).size.height / 4,
       width: MediaQuery.of(context).size.width,
-      child: ListView(
-        scrollDirection: Axis.vertical,
+      child: Column(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+
         children: [
-          ListTile(title: Text("Sonfona, Conakry"), leading: Icon(Icons.home)),
+          ListTile(
+            title: Text("Sonfona, Conakry"), 
+            leading: Icon(Icons.home)
+          ),
           ListTile(
             title: Text("Developpeur flutter"),
             leading: Icon(Icons.work),

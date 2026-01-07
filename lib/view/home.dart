@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wireframe_app/view/a_propos.dart';
+import 'package:wireframe_app/view/mes_amis.dart';
 import 'package:wireframe_app/view/profil.dart';
 
 class Home extends StatefulWidget {
@@ -34,7 +35,9 @@ class HomeState extends State<Home> {
             const Divider(),
             sectionTitle(title: "A propos de moi"),
             Apropos(),
-            const Divider()
+            const Divider(),
+            sectionTitle(title: "Amis"),
+            MesAmis()
           ],
         ),
       ),
