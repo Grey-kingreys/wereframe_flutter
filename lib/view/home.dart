@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wireframe_app/view/a_propos.dart';
 import 'package:wireframe_app/view/mes_amis.dart';
+import 'package:wireframe_app/view/mes_postes.dart';
 import 'package:wireframe_app/view/profil.dart';
 
 class Home extends StatefulWidget {
@@ -26,21 +27,31 @@ class HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(elevation: 6, title: const Text("Profil facebook")),
       body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            //profil
-            Profil(),
-            const Divider(),
-            sectionTitle(title: "A propos de moi"),
-            Apropos(),
-            const Divider(),
-            sectionTitle(title: "Amis"),
-            MesAmis()
-          ],
-        ),
+        child: Padding(
+          padding: EdgeInsets.only(
+            left: 5, 
+            right: 5, 
+            top: 0,
+            bottom: 16
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              //profil
+              Profil(),
+              const Divider(),
+              sectionTitle(title: "A propos de moi"),
+              Apropos(),
+              const Divider(),
+              sectionTitle(title: "Amis"),
+              MesAmis(),
+              sectionTitle(title: "Mes Postes"),
+              MesPostes(),
+            ],
+          ),
+        )
       ),
     );
   }
