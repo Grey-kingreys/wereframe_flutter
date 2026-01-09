@@ -13,9 +13,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      // Je definie la theme clair de l'application
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true
       ),
+      // Je definie la theme de l'application si le telephone est en mode dark
+      darkTheme: ThemeData.dark(useMaterial3: true),
+      // Maintenant j'appel home
       home: Home(),
     );
   }

@@ -6,6 +6,7 @@ import 'package:wireframe_app/view/profil.dart';
 class Home extends StatefulWidget {
   const Home({super.key});
 
+
   @override
   State<Home> createState() {
     return HomeState();
@@ -14,10 +15,10 @@ class Home extends StatefulWidget {
 
 class HomeState extends State<Home> {
 
-  final TextStyle titleStyle = const TextStyle(
+  TextStyle titleStyle(BuildContext context) => TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 16,
-    color: Colors.black
+    color: Theme.of(context).colorScheme.inversePrimary
   );
   
   @override
@@ -47,7 +48,7 @@ class HomeState extends State<Home> {
   Widget sectionTitle({required String title}) {
     return Padding(
       padding: const EdgeInsets.only(top: 2, left: 8),
-      child: Text(title, style: titleStyle),
+      child: Text(title, style: titleStyle(context)),
     );
   }
 }

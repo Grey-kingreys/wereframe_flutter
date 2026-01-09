@@ -30,7 +30,7 @@ class Profil extends StatelessWidget {
             right: 0,
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Theme.of(context).colorScheme.surface,
                 borderRadius: BorderRadius.only(),
               ),
               child: Column(
@@ -40,7 +40,6 @@ class Profil extends StatelessWidget {
                     child: CircleAvatar(
                       radius: 50,
                       backgroundImage: AssetImage("assets/images/sasuke.jpg"),
-                      backgroundColor: Colors.white,
                     ),
                   ),
 
@@ -49,9 +48,9 @@ class Profil extends StatelessWidget {
                     child: Text(
                       "Grey ykz Kingrey's",
                       style: TextStyle(
-                        fontSize: 24,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Theme.of(context).primaryColorDark,
+                        color: Theme.of(context).colorScheme.onSurface,
                       ),
                     ),
                   ),
@@ -59,9 +58,9 @@ class Profil extends StatelessWidget {
                   Transform.translate(
                     offset: Offset(0, -20),
                     child: Text(
-                      "Personne n'a le droit de juger un homme avant la fin car l'etre humain est capable du meilleur comme du pire",
+                      "Limagination est mieux que la connaissance",
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 14, color: Colors.grey[600]),
+                      style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurface),
                     ),
                   ),
                   // Boutons
@@ -74,15 +73,15 @@ class Profil extends StatelessWidget {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.blue,
-                              padding: EdgeInsets.symmetric(vertical: 12),
+                              backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+                              padding: EdgeInsets.symmetric(vertical: 8),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(25),
                               ),
                             ),
                             child: Text(
                               "Modifier le profil",
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
                             ),
                           ),
                         ),
@@ -92,12 +91,12 @@ class Profil extends StatelessWidget {
                         // Bouton icône (crayon)
                         Container(
                           decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Theme.of(context).colorScheme.inversePrimary,
                             shape: BoxShape.circle,
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.edit, color: Colors.white),
+                            icon: Icon(Icons.edit, color: Theme.of(context).colorScheme.onSurface),
                           ),
                         ),
                       ],
