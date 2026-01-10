@@ -180,10 +180,10 @@ wireframe_app/
 
 ```markdown
 ### Mode Clair
-![Profil](screenshots/profile_light.png)
+https://github.com/Grey-kingreys/wereframe_flutter/tree/master/assets/captures
 
 ### Mode Sombre
-![Profil Dark](screenshots/profile_dark.png)
+https://github.com/Grey-kingreys/wereframe_flutter/tree/master/assets/captures
 ```
 
 ## 🎨 Choix de conception
