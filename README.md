@@ -178,13 +178,13 @@ wireframe_app/
 
 > **Note:** Ajoutez ici vos captures d'écran de l'application en fonctionnement
 
-```markdown
+- markdown
 ### Mode Clair
 https://github.com/Grey-kingreys/wereframe_flutter/tree/master/assets/captures
 
 ### Mode Sombre
 https://github.com/Grey-kingreys/wereframe_flutter/tree/master/assets/captures
-```
+
 
 ## 🎨 Choix de conception
 
